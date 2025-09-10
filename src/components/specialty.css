@@ -1,0 +1,29 @@
+ .specialty h2 {
+  font-weight: bold;
+  color: #5e6266;
+  border-bottom: 3px solid #d43838;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif; /* ✅ applied */
+}
+
+.specialty p {
+  color: #555;
+  font-size: 1rem;
+  max-width: 750px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+.progress {
+  height: 13px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+  font-weight: 600;
+  font-size: 0.9rem;
+}

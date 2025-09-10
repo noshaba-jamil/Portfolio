@@ -1,0 +1,52 @@
+ 
+  .sidebar {
+  flex: 0 0 280px;       /* fixed width */
+  width: 280px;
+  height: 100vh;
+  background: #fff;
+  border-right: 1px solid #eee;
+  position: fixed;       /* stays in place */
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 1000;    
+  padding: 70px 0 ; /* top padding */     /* stays above content */
+}
+
+
+/* Default links: black */
+.sidebar .nav-link {
+  color: black !important;
+  transition: all 0.3s ease-in-out;
+  padding: 0.6rem 1rem;
+  display: block;
+}
+
+/* Hover effect: underline + smooth */
+.sidebar .nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #2C98F0;
+  color: black !important;
+  background-color: #f1f1f1; /* slight bg highlight */
+  border-radius: 5px;
+}
+
+/* Active link: blue + bold */
+.sidebar .nav-link.active {
+  color: #2C98F0 !important;
+  font-weight: 600;
+  border-left: 4px solid #2C98F0; /* adds a nice left border indicator */
+  background-color: #eef7ff; /* subtle bg */
+}
+ .custom-name {
+  font-weight: bold; /* fw-bold equivalent */
+  width: 800px;      /* increase width as needed */
+  font-size: 2rem; /* optional: increase font size */
+}
+
+.custom-role {
+  color: #007bff;    /* bootstrap blue */
+  font-size: 7rem; /* small text */
+  width: 300px;      /* match width with name */
+}

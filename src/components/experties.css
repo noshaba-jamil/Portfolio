@@ -1,0 +1,88 @@
+ .expertise-card {
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 14px;
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-bottom: 6px solid transparent; /* default */
+}
+
+.expertise-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Bottom border colors */
+.graphic-card {
+  border-bottom-color: #e91e63;
+}
+.web-card {
+  border-bottom-color: #3f51b5;
+}
+.software-card {
+  border-bottom-color: #009688;
+}
+.app-card {
+  border-bottom-color: #ff9800;
+}
+.database-card {
+  border-bottom-color: #4caf50;
+}
+.wordpress-card {
+  border-bottom-color: #21759b;
+}
+
+/* Icons (same as before) */
+.expertise-icon {
+  font-size: 3rem;
+  padding: 15px;
+  border: 3px solid;
+  border-radius: 50%;
+}
+.expertise-icon.graphic {
+  color: #e91e63;
+  border-color: #e91e63;
+}
+.expertise-icon.web {
+  color: #3f51b5;
+  border-color: #3f51b5;
+}
+.expertise-icon.software {
+  color: #009688;
+  border-color: #009688;
+}
+.expertise-icon.app {
+  color: #ff9800;
+  border-color: #ff9800;
+}
+.expertise-icon.database {
+  color: #4caf50;
+  border-color: #4caf50;
+}
+.expertise-icon.wordpress {
+  color: #21759b;
+  border-color: #21759b;
+}
+/* Custom heading styling */
+.expertise-heading {
+  text-align: left;
+  font-size: 2.7rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #2c3e50;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+/* Underline accent */
+.expertise-heading::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #3f51b5; /* you can match your brand color */
+  margin-top: 10px;
+  border-radius: 2px;
+}

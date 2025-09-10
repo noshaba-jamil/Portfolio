@@ -1,0 +1,45 @@
+ /* Layout wrapper */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  margin-left: 280px; /* same as sidebar width */
+  padding: 2rem;
+  transition: margin-left 0.3s ease;
+}
+
+/* When sidebar is collapsed on small screens, remove left margin */
+@media (max-width: 992px) {
+  .content {
+    margin-left: 0;
+  }
+}
+
+/* Optional: smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Example heading styles */
+h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Feature section */
+.feature {
+  padding: 20px;
+  text-align: center;
+}
+
+.feature h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #555;
+}
