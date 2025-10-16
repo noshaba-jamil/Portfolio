@@ -13,6 +13,8 @@ import  Contact from "./components/Contact";
 import "./app.css";
 import Work from "./components/Work";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
+import Success from "./components/success";
 
 function App() {
   return (
@@ -28,22 +30,24 @@ function App() {
               path="/"
               element={
                 <>
+                  <WhatsAppButton/>
                   <Hero />
                   <About />
-                  <Skills />
-                  <Highlight />
-                   <Expertise />
-                   <StatsSection></StatsSection>
-                   <Specialty></Specialty>
-                   <Education></Education>
-                   <Work></Work>
+                  <Skills  path="/skills" element={<Skills />}/>
+                  <Highlight path="/Highlight" element={<Highlight/>}/>
+                   <Expertise path="/experties" element={<Experties />}/>
+                   <StatsSection  path="/StatsSection" element={<StatsSection />} />
+                   <Specialty path="/Specialty" element={< Specialty/>} /> 
+                   <Education path="/Education" element={<  Education/>} />  
+                   <Work path="/ Work" element={< Work/>} /> 
                    
-                  <Contact></Contact>
-                   <Footer></Footer>
+                  <Contact  path="/  Contact" element={< Contact/>} />  
+                   <Footer   path="/  Footer" element={<  Footer/>} />
                 </>
               }
             />
-            <Route path="/cv" element={<CV />} />
+            <Route path="/cv" element={<CV/>} />
+             <Route path="/success" element={<Success/>} />
           </Routes>
         </div>
       </div>

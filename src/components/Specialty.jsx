@@ -27,7 +27,7 @@ const Specialty = () => {
           <div className="mb-3">
             <label>React</label>
             <div className="progress">
-              <div className="progress-bar bg-primary" style={{ width: "90%" }}>
+              <div className=" progress-bar bg-danger" style={{ width: "100%" }}>
                 100%
               </div>
             </div>
@@ -36,7 +36,7 @@ const Specialty = () => {
           <div className="mb-3">
             <label>Redux</label>
             <div className="progress">
-              <div className="progress-bar bg-success" style={{ width: "80%" }}>
+              <div className="progress-bar   bg-dark" style={{ width: "100%" }}>
                 100%
               </div>
             </div>
@@ -45,7 +45,7 @@ const Specialty = () => {
           <div className="mb-3">
             <label>Bootstrap</label>
             <div className="progress">
-              <div className="progress-bar bg-info" style={{ width: "85%" }}>
+              <div className="progress-bar $purple" style={{ width: "100%" }}>
                 100%
               </div>
             </div>
@@ -54,7 +54,7 @@ const Specialty = () => {
           <div className="mb-3">
             <label>Tailwind CSS</label>
             <div className="progress">
-              <div className="progress-bar bg-warning text-dark" style={{ width: "75%" }}>
+              <div className="progress-bar bg-warning text-dark" style={{ width: "95%" }}>
                 95%
               </div>
             </div>
@@ -63,7 +63,7 @@ const Specialty = () => {
           <div className="mb-3">
             <label>SQL</label>
             <div className="progress">
-              <div className="progress-bar bg-danger" style={{ width: "70%" }}>
+              <div className="progress-bar bg-danger" style={{ width: "100%" }}>
                 100%
               </div>
             </div>
@@ -111,8 +111,8 @@ const Specialty = () => {
           <div className="mb-3">
             <label>Git & Version Control</label>
             <div className="progress">
-              <div className="progress-bar bg-info" style={{ width: "85%" }}>
-                90%
+              <div className="progress-bar bg-info" style={{ width: "100%" }}>
+                100%
               </div>
             </div>
           </div>
@@ -120,7 +120,7 @@ const Specialty = () => {
           <div className="mb-3">
             <label>PHP</label>
             <div className="progress">
-              <div className="progress-bar bg-warning text-dark" style={{ width: "65%" }}>
+              <div className="progress-bar bg-warning text-dark" style={{ width: "70%" }}>
                 70%
               </div>
             </div>

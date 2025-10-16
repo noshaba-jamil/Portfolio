@@ -32,7 +32,7 @@ const Highlight = () => {
          
  <p className="display-5 mb-2">I am happy to know you</p>
 <p className="display-6 mb-4">
-  that <strong>300+ projects</strong> done successfully!
+  that <strong>I Recently completed my internship</strong>  successfully!
 </p>
 
         <a href="#contact" className="btn btn-dark btn-lg">

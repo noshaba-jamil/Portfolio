@@ -1,8 +1,41 @@
- import React from "react";
-import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaGithub, FaLinkedin } from "react-icons/fa";
+ import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import "./contact.css";
 
 const Contact = () => {
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("http://localhost/contact_backend/contact.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        // ✅ Redirect to Success page
+        navigate("/success");
+      } else {
+        setStatus(data.message || "Message not sent. Please try again.");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("Something went wrong. Please try again later.");
+    }
+  };
+
   return (
     <section id="contact" className="contact-section container">
       <h2 className="text-center mb-5">Contact</h2>
@@ -21,7 +54,7 @@ const Contact = () => {
             <div className="icon"><FaMapMarkerAlt /></div>
             <div>
               <h5>Address</h5>
-              <p>Street No 20, New Model Town, Near Shansha Marriage Hall, Taxila</p>
+              <p>Street No 20, New Model Town, Taxila</p>
             </div>
           </div>
 
@@ -32,38 +65,43 @@ const Contact = () => {
               <p>+92 3195776141</p>
             </div>
           </div>
-
-          {/* GitHub */}
-          <div className="info-box d-flex align-items-center mb-4">
-            <div className="icon"><FaGithub /></div>
-            <div>
-              <h5>GitHub</h5>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-                github.com/noshaba-jamil
-              </a>
-            </div>
-          </div>
-
-          {/* LinkedIn */}
-          <div className="info-box d-flex align-items-center">
-            <div className="icon"><FaLinkedin /></div>
-            <div>
-              <h5>LinkedIn</h5>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-                linkedin.com/in/Noshabajamil
-              </a>
-            </div>
-          </div>
         </div>
 
         {/* Contact Form */}
         <div className="col-md-7">
-          <form className="contact-form">
-            <input type="text" className="form-control mb-3" placeholder="Name" required />
-            <input type="email" className="form-control mb-3" placeholder="Email" required />
-            <input type="text" className="form-control mb-3" placeholder="Subject" />
-            <textarea className="form-control mb-3" rows="5" placeholder="Message"></textarea>
-            <button type="submit" className="btn btn-primary w-100">Send Message</button>
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              className="form-control mb-3"
+              placeholder="Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              className="form-control mb-3"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+            <textarea
+              name="message"
+              className="form-control mb-3"
+              rows="5"
+              placeholder="Message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+            <button type="submit" className="btn btn-primary w-100">
+              Send Message
+            </button>
+
+            {status && <p className="mt-3 text-center text-danger">{status}</p>}
           </form>
         </div>
       </div>
@@ -72,4 +110,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
