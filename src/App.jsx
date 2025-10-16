@@ -5,7 +5,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Highlight from "./Highlight"; // fixed import
 import CV from "./components/CV";
-import Expertise from "./components/Experties";
+import Experties from "./components/Experties";
 import Specialty from "./components/Specialty";
 import StatsSection from "./components/StatesSection";
 import  Education from "./components/Education";
@@ -34,15 +34,15 @@ function App() {
                   <Hero />
                   <About />
                   <Skills  path="/skills" element={<Skills />}/>
-                  <Highlight path="/Highlight" element={<Highlight/>}/>
-                   <Expertise path="/experties" element={<Experties />}/>
-                   <StatsSection  path="/StatsSection" element={<StatsSection />} />
-                   <Specialty path="/Specialty" element={< Specialty/>} /> 
-                   <Education path="/Education" element={<  Education/>} />  
-                   <Work path="/ Work" element={< Work/>} /> 
+                  <Highlight path="/hireMe" element={<Highlight/>}/>
+                   <Experties path="/experties" element={<Experties/>}/>
+                   <StatsSection  path="/StatsSection" element={<StatsSection/>} />
+                   <Specialty path="/Specialty" element={<Specialty/>} /> 
+                   <Education path="/Education" element={<Education/>} />  
+                   <Work path="/ Work" element={<Work/>} /> 
                    
-                  <Contact  path="/  Contact" element={< Contact/>} />  
-                   <Footer   path="/  Footer" element={<  Footer/>} />
+                  <Contact  path="/  Contact" element={<Contact/>} />  
+                   <Footer   path="/  Footer" element={< Footer/>} />
                 </>
               }
             />

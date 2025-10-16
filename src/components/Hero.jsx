@@ -14,7 +14,7 @@ const Hero = () => {
   className="lead fs-4" 
   style={{ color: "#2C98F0" }}
 >
-  Web & App Developer | React | Bootstrap
+  Web & App Developer | React | Bootstrap| Redux
 </p>
 
      <a

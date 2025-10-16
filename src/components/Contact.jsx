@@ -16,7 +16,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost/contact_backend/contact.php", {
+      const res = await fetch("http://noshaba.infinityfree.me/contact_backend/contact.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

@@ -7,6 +7,13 @@ import "./work.css";
 
 
 const projects = [
+    {
+    title: "Portfolio Website",
+    description: "A React-based personal portfolio website showcasing skills and projects.",
+    img: myImage,
+    liveLink: "https://noshaba-portfolio.netlify.app",
+    github: "https://github.com/noshaba-jamil/Portfolio.git"
+  },
   {
     title: "Medical Billing Website",
     description: "A responsive WordPress website for a U.S.-based medical billing service with SEO optimization.",
@@ -14,13 +21,7 @@ const projects = [
     liveLink: "https://primemedicalrevenue.com", 
     github: "https://github.com/yourusername/medical-billing"
   },
-  {
-    title: "Portfolio Website",
-    description: "A React-based personal portfolio website showcasing skills and projects.",
-    img: myImage,
-    liveLink: "https://yourportfolio.com",
-    github: "https://github.com/yourusername/portfolio"
-  },
+
   {
     title: "E-commerce Store",
     description: "Shopify + custom theme development with product pages and cart system.",

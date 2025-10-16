@@ -35,7 +35,7 @@ const Highlight = () => {
   that <strong>I Recently completed my internship</strong>  successfully!
 </p>
 
-        <a href="#contact" className="btn btn-dark btn-lg">
+        <a href="contact/" className="btn btn-dark btn-lg">
           Hire Me
         </a>
       </div>

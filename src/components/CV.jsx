@@ -1,4 +1,4 @@
- import React from "react";
+ 
 import "./cv.css";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
@@ -17,15 +17,15 @@ const CV = () => {
 
         {/* Contact & Social Links */}
         <div className="contact-info">
-          <p><FaEnvelope /> noshaba@example.com</p>
-          <p><FaPhone /> +92 300 0000000</p>
+          <p><FaEnvelope /> nosmal1083@gmail.com</p>
+          <p><FaPhone /> +92 3195776141</p>
           <p><FaMapMarkerAlt /> Pakistan</p>
         </div>
 
         <div className="social-links">
-          <a href="https://github.com/yourgithub" target="_blank" rel="noreferrer"><FaGithub /></a>
-          <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noreferrer"><FaLinkedin /></a>
-          <a href="https://instagram.com/yourinstagram" target="_blank" rel="noreferrer"><FaInstagram /></a>
+          <a href="https://github.com/noshaba-jamil" target="_blank" rel="noreferrer"><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/noshaba-jamil?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+          <a href="https://www.instagram.com/enigmatic_pulse?igsh=cmltaHQ0NW5iMWQx" target="_blank" rel="noreferrer"><FaInstagram /></a>
         </div>
       </div>
 
@@ -34,6 +34,7 @@ const CV = () => {
         <h4>Technical Skills</h4>
         <ul className="skills-grid">
           <li>React.js</li>
+          <li>Redux</li>
           <li>Node.js / Express.js</li>
           <li>MongoDB</li>
           <li>SQL</li>
@@ -41,7 +42,7 @@ const CV = () => {
           <li>JavaScript (ES6+)</li>
           <li>Bootstrap / TailwindCSS</li>
           <li>WordPress / Shopify</li>
-          <li>SEO & Digital Marketing</li>
+          <li>SEO</li>
           <li>Python (Basics)</li>
           <li>C++ / Java (Intermediate)</li>
           <li>Git & GitHub</li>
@@ -75,6 +76,7 @@ const CV = () => {
       <section className="section">
         <h4>Experience</h4>
         <ul>
+           <li><strong> Web&App internship</strong> – 2 months duration- experience delivering projects for   clients</li>
           <li><strong>Freelance Web & App Developer</strong> – 1 year experience delivering projects for global clients</li>
           <li><strong>SEO Project</strong> – Worked on www.primemedicalrevenue.com, improving SEO & performance</li>
           <li><strong>Teacher</strong> – Mentoring students in computer science & web development</li>
@@ -86,7 +88,8 @@ const CV = () => {
       <section className="section">
         <h4>Projects</h4>
         <ul>
-          <li><strong>VU Lecture Hub</strong> – YouTube channel for Virtual University lectures</li>
+          <li><strong>Wordpress theme</strong> – customization</li>
+           
           <li><strong>Interactive Birthday Game</strong> – Web-based project (React + JS)</li>
           <li><strong>Portfolio & Freelance Projects</strong> – Built responsive websites & apps for clients</li>
         </ul>

@@ -9,14 +9,13 @@ const Navbar = () => {
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActive(entry.target.id);
-            // Update URL without reloading
-            window.history.replaceState(null, "", `/${entry.target.id}`);
+            // optional: use hash to avoid router mismatch
+            window.history.replaceState(null, "", `${entry.target.id}`);
           }
         });
       },
@@ -28,9 +27,23 @@ const Navbar = () => {
   }, []);
 
   const handleClick = (item) => {
-    navigate(`/${item}`); // updates URL
-    document.getElementById(item)?.scrollIntoView({ behavior: "smooth" });
+    if (item === "cv" || item === "success") {
+      navigate(`/${item}`);
+    } else {
+      document.getElementById(item)?.scrollIntoView({ behavior: "smooth" });
+    }
   };
+
+  const navItems = [
+    "home",
+    "about",
+    "skills",
+    "experties",
+    "education",
+    "work",
+    "hireMe",
+    "contact",
+  ];
 
   return (
     <>
@@ -58,16 +71,7 @@ const Navbar = () => {
         </div>
 
         <ul className="nav flex-column text-center">
-          {[
-            "home",
-            "about",
-            "skills",
-            "education",
-            "experience",
-            "work",
-            "hierMe",
-            "contact",
-          ].map((item) => (
+          {navItems.map((item) => (
             <li className="nav-item" key={item}>
               <a
                 className={`nav-link ${active === item ? "active" : ""}`}
