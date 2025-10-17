@@ -62,3 +62,24 @@
 .contact-form button:hover {
   background: #1a75d1;
 }
+/* Let's Talk Section */
+.lets-talk-section {
+  background: linear-gradient(135deg, #5c9abe, #5a565a);
+  padding: 100px 20px;
+  color: white;
+}
+
+.lets-talk-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.lets-talk-section .theme-btn {
+  background: white;
+  color:  #0d6efd;
+  font-weight: 600;
+}
+
+.lets-talk-section .theme-btn:hover {
+  background: #f4f4f4;
+}

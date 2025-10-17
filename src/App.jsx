@@ -14,7 +14,9 @@ import Work from "./components/Work";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Success from "./components/success";
+import Error from "./components/Error";
 import "./app.css";
+
 
 function HomePage() {
   return (
@@ -63,7 +65,7 @@ function App() {
             <Route path="/work" element={<Work />} />
 
             {/* ✅ Fallback (for 404) */}
-            <Route path="*" element={<HomePage />} />
+            <Route path="*" element={<Error/>} />
           </Routes>
         </div>
       </div>
