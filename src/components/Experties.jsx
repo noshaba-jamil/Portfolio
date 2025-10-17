@@ -8,16 +8,16 @@ import {
 } from "react-icons/fa";
 import "./experties.css";
 
-const Expertise = () => {
+const Experties = () => {
   return (
-    <section className="expertise-section py-5">
+    <section  id="experties" className="experties-section py-5">
       <div className="container">
-        <h2 className="expertise-heading mb-5">My Expertise</h2>
+        <h2 className="experties-heading mb-5">My experties</h2>
 
         <div className="row justify-content-center">
           <div className="col-lg-4 col-md-6 mb-4">
-            <div className="expertise-card web-card">
-              <FaCode className="expertise-icon web" />
+            <div className="experties-card web-card">
+              <FaCode className="experties-icon web" />
               <h4 className="fw-bold mt-3">Web Development</h4>
               <p>
                 Building responsive, interactive websites using React,
@@ -27,8 +27,8 @@ const Expertise = () => {
           </div>
 
           <div className="col-lg-4 col-md-6 mb-4">
-            <div className="expertise-card software-card">
-              <FaCogs className="expertise-icon software" />
+            <div className="experties-card software-card">
+              <FaCogs className="expertiess-icon software" />
               <h4 className="fw-bold mt-3">Software Solutions</h4>
               <p>
                 Developing scalable software systems with clean architecture and
@@ -38,8 +38,8 @@ const Expertise = () => {
           </div>
 
           <div className="col-lg-4 col-md-6 mb-4">
-            <div className="expertise-card app-card">
-              <FaMobileAlt className="expertise-icon app" />
+            <div className="experties-card app-card">
+              <FaMobileAlt className="experties-icon app" />
               <h4 className="fw-bold mt-3">React Applications</h4>
               <p>
                 Crafting  apps that deliver seamless
@@ -49,8 +49,8 @@ const Expertise = () => {
           </div>
 
           <div className="col-lg-4 col-md-6 mb-4">
-            <div className="expertise-card database-card">
-              <FaDatabase className="expertise-icon database" />
+            <div className="experties-card database-card">
+              <FaDatabase className="experties-icon database" />
               <h4 className="fw-bold mt-3">Database Management</h4>
               <p>
                 Managing MySQL & MongoDB databases with optimized queries and
@@ -60,8 +60,8 @@ const Expertise = () => {
           </div>
 
           <div className="col-lg-4 col-md-6 mb-4">
-            <div className="expertise-card wordpress-card">
-              <FaWordpress className="expertise-icon wordpress" />
+            <div className="experties-card wordpress-card">
+              <FaWordpress className="experties-icon wordpress" />
               <h4 className="fw-bold mt-3">WordPress Development</h4>
               <p>
                 Designing custom WordPress websites with Elementor, SEO
@@ -72,8 +72,8 @@ const Expertise = () => {
           {/* Graphic Design */}
 
           <div className="col-lg-4 col-md-6 mb-4">
-            <div className="expertise-card graphic-card">
-              <FaPaintBrush className="expertise-icon graphic" />
+            <div className="experties-card graphic-card">
+              <FaPaintBrush className="experties-icon graphic" />
               <h4 className="fw-bold mt-3">Graphic Design</h4>
               <p>
                 Creative designs with modern tools to build strong visual
@@ -87,4 +87,4 @@ const Expertise = () => {
   );
 };
 
-export default Expertise;
+export default Experties;

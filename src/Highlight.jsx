@@ -1,4 +1,6 @@
  import "./highlight.css";
+ import { Link } from "react-router-dom";
+
 import  { useEffect, useRef } from "react";
 const Highlight = () => {
   const highlightRef = useRef(null);
@@ -26,7 +28,7 @@ const Highlight = () => {
     };
   }, []);
   return (
-    <section ref={highlightRef} id="hierMe" className="highlight-section py-5 text-center">
+    <section ref={highlightRef} id="HireMe" className="highlight-section py-5 text-center">
 
       <div className="container">
          
@@ -35,9 +37,10 @@ const Highlight = () => {
   that <strong>I Recently completed my internship</strong>  successfully!
 </p>
 
-        <a href="contact/" className="btn btn-dark btn-lg">
-          Hire Me
-        </a>
+        <Link to="/contact" className="btn btn-dark btn-lg">
+  Hire Me
+</Link>
+
       </div>
     </section>
   );
